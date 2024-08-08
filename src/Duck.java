@@ -20,9 +20,11 @@ public class Duck extends Animal{
     }
 
     public void weeklyEggCount(int days){
-        System.out.println("За "+days+" дн. утка "+this.name+" снесет "+eggCount*days/7+" яиц.");
+        System.out.println("За "+days+" дн. утка "+super.getName()+" снесет "+eggCount*days/7+" яиц.");
     }
+
+    @Override
     public void move(){
-        System.out.println("Утка по кличке "+this.name+" идет по земле.");
+        System.out.println("Утка по кличке "+super.name+" идет по земле.");
     }
 }

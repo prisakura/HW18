@@ -17,8 +17,9 @@ public class Dog extends Animal{
         this.breed = breed;
     }
 
+    @Override
     public void move() {
-        System.out.println("Собака по кличке "+this.name+" идет по земле...");
+        System.out.println("Собака по кличке "+super.getName()+" идет по земле...");
     }
 
     public void breeding(Breed dog) {

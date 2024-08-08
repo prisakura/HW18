@@ -4,12 +4,10 @@ public class Main {
         Dog dog = new Dog("Бокс",5600,4,Breed.SPANIEL);
 
         duck.move();
-        duck.walk();
 
         duck.weeklyEggCount(10);
 
         dog.move();
-        dog.walk();
 
         dog.breeding(Breed.TERRIER);
     }
